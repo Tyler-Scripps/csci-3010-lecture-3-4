@@ -26,4 +26,8 @@ TEST_CASE ("Vector plus n is computed computed", "[product]" ) {
         nums = VectorPlusN(nums, 2);
         REQUIRE(nums.at(0) == 3);
     }
+    SECTION( "adding negative n to vector") {
+        nums = VectorPlusN(nums, -2);
+        REQUIRE(nums.at(0) == -1);
+    }
 }
